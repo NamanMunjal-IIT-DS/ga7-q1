@@ -23,7 +23,6 @@
           </aside>
         </section>
 
-        <!-- List items appear one by one -->
         <section>
           <h2>Key Points</h2>
           <ul>
@@ -33,7 +32,6 @@
           </ul>
         </section>
 
-        <!-- Chart sections appear gradually -->
         <section>
           <h2>Data Flow</h2>
           <div class="r-stack">
@@ -80,7 +78,7 @@
         <section>
           <h2>Market Data Analysis</h2>
           <pre>
-            <code class="python" data-line-numbers="1,4|5-6|8">
+<code class="python" data-line-numbers="1,4|5-6|8">
 import pandas as pd
 import numpy as np
 
@@ -91,7 +89,7 @@ market_data = pd.read_csv('market_data.csv')
 market_data['SMA_50'] = market_data['Close'].rolling(window=50).mean()
 
 print(market_data.tail())
-            </code>
+</code>
           </pre>
           <aside class="notes">
             Our data science team used this Python script to analyze market trends, specifically calculating a 50-day simple moving average. The line-number highlighting draws attention to specific parts of the code.
@@ -99,16 +97,18 @@ print(market_data.tail())
         </section>
 
         <section>
-          <pre><code class="python" data-line-numbers="1-2|4,6-7|9">
-        import pandas as pd
-        import seaborn as sns
+          <pre>
+<code class="python" data-line-numbers="1-2|4,6-7|9">
+import pandas as pd
+import seaborn as sns
 
-        # Load data
-        data = pd.read_csv('data.csv')
+# Load data
+data = pd.read_csv('data.csv')
 
-        # Create visualization
-        sns.scatterplot(data=data, x='x', y='y')
-          </code></pre>
+# Create visualization
+sns.scatterplot(data=data, x='x', y='y')
+</code>
+          </pre>
         </section>
 
 
