@@ -1,156 +1,118 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>24f2001419@ds.study.iitm.ac.in</title>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="description" content="Interactive RevealJS Presentation for Quarterly Earnings Report">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme">
+  <!-- Highlight.js (code syntax) -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/plugin/highlight/monokai.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Title Slide -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <h3>Financial Institution</h3>
+        <p>Contact: <a href="mailto:24f2001419@ds.study.iitm.ac.in">24f2001419@ds.study.iitm.ac.in</a></p>
+        <p>24f2001419@ds.study.iitm.ac.in</p>
+        <aside class="notes">
+          Welcome stakeholders! Use arrow keys to navigate, 'S' for speaker notes, 'F' for fullscreen.
+        </aside>
+      </section>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme" />
+      <!-- Markdown Slide -->
+      <section data-markdown>
+        <textarea data-template>
+## This Quarter at a Glance
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" />
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section>
-          <h1>Quarterly Earnings Report</h1>
-          <h3>Financial Performance Analysis</h3>
-          <p>Presented by: <a href="mailto:24f2001419@ds.study.iitm.ac.in">24f2001419@ds.study.iitm.ac.in</a></p>
-          <p>24f2001419@ds.study.iitm.ac.in</p>
-          <aside class="notes">
-            Welcome everyone to our Q3 earnings report. We'll be reviewing our key performance indicators and financial highlights.
-          </aside>
-        </section>
+- Revenue Growth: **15% YoY**
+- Net Profit: <span style="color:green">$8.2M</span>
+- EPS: $2.30
 
-        <section>
-          <h2>Key Points</h2>
-          <ul>
-            <li class="fragment">First point</li>
-            <li class="fragment">Second point</li>
-            <li class="fragment fade-up">Animated point</li>
-          </ul>
-        </section>
+_The financials reflect strategic investments and cost optimization efforts._
+        </textarea>
+        <aside class="notes">
+          Summarize headline financial figures. Point out YoY growth and highlight cost controls.
+        </aside>
+      </section>
 
-        <section>
-          <h2>Data Flow</h2>
-          <div class="r-stack">
-            <p>Hi</p>
-            <p>There</p>
-          </div>
-        </section>
+      <!-- Animated Elements (Fragments) -->
+      <section>
+        <h2>Key Highlights</h2>
+        <ul>
+          <li class="fragment">Expanded regional presence</li>
+          <li class="fragment">Launched new product platform</li>
+          <li class="fragment">Achieved record customer satisfaction</li>
+        </ul>
+        <aside class="notes">
+          Reveal each highlight with audience focus. Touch on strategic value of each advance.
+        </aside>
+      </section>
 
+      <!-- Code Presentation -->
+      <section>
+        <h2>Financial Calculation Code</h2>
+        <pre><code class="language-python">
+# Return on Equity (ROE)
+net_income = 8_200_000
+shareholder_equity = 40_850_000
+roe = net_income / shareholder_equity
+print(f"ROE: {roe:.2%}")
+        </code></pre>
+        <aside class="notes">
+          ROE is a key profitability metric. This Python snippet calculates it using current values.
+        </aside>
+      </section>
 
-        <section data-markdown>
-          <textarea data-template>
-            ## Key Highlights
+      <!-- Math/Financial Formula -->
+      <section>
+        <h2>Financial Formula</h2>
+        <p>
+          $$ \text{EPS} = \frac{\text{Net Income} - \text{Dividends on Preferred Stock}}{\text{Average Outstanding Shares}} $$
+        </p>
+        <aside class="notes">
+          EPS is vital for shareholder analysis. Be ready to discuss its impact and how it's calculated.
+        </aside>
+      </section>
 
-            - Strong revenue growth of **15%** quarter-over-quarter.
-            - Successful launch of our new digital banking platform.
-            - Expansion into new international markets.
-
-            ---
-
-            ## Strategic Outlook
-
-            - Focus on customer acquisition through targeted marketing.
-            - Investment in AI-driven fraud detection.
-            - Optimization of operational costs.
-          </textarea>
-          <aside class="notes">
-            This slide, created with Markdown, provides a high-level overview of our achievements and future plans.
-          </aside>
-        </section>
-
-        <section>
-          <h2>Revenue Breakdown</h2>
-          <p>Our revenue streams showed diversified growth this quarter.</p>
-          <ul>
-            <li class="fragment fade-up">Digital Services: **+25%** year-over-year</li>
-            <li class="fragment fade-up">Traditional Banking: **+5%** year-over-year</li>
-            <li class="fragment fade-up">Wealth Management: **+10%** year-over-year</li>
-          </ul>
-          <aside class="notes">
-            We will now break down our revenue streams. Notice the significant growth in our digital services, a result of our strategic investments. The animated bullet points highlight each area of growth sequentially.
-          </aside>
-        </section>
-
-        <section>
-          <h2>Market Data Analysis</h2>
-          <pre>
-<code class="python" data-line-numbers="1,4|5-6|8">
-import pandas as pd
-import numpy as np
-
-# Load market data
-market_data = pd.read_csv('market_data.csv')
-
-# Calculate moving average
-market_data['SMA_50'] = market_data['Close'].rolling(window=50).mean()
-
-print(market_data.tail())
-</code>
-          </pre>
-          <aside class="notes">
-            Our data science team used this Python script to analyze market trends, specifically calculating a 50-day simple moving average. The line-number highlighting draws attention to specific parts of the code.
-          </aside>
-        </section>
-
-        <section>
-          <pre>
-<code class="python" data-line-numbers="1-2|4,6-7|9">
-import pandas as pd
-import seaborn as sns
-
-# Load data
-data = pd.read_csv('data.csv')
-
-# Create visualization
-sns.scatterplot(data=data, x='x', y='y')
-</code>
-          </pre>
-        </section>
-
-
-        <section>
-          <h2>Financial Valuation</h2>
-          <p>We can determine the present value of future cash flows using the following formula:</p>
-          <div style="text-align: center;">
-            $$ PV = \sum_{t=1}^{n} \frac{CF_t}{(1+r)^t} $$
-          </div>
-          <p>Where:</p>
-          <ul class="no-bullets">
-            <li>$PV$ = Present Value</li>
-            <li>$CF_t$ = Cash Flow at time $t$</li>
-            <li>$r$ = Discount Rate</li>
-          </ul>
-          <aside class="notes">
-            This discounted cash flow model is fundamental to our valuation process, helping us assess the long-term value of our assets.
-          </aside>
-        </section>
-
-        <section>
-          <h2>Conclusion</h2>
-          <p>The quarter was a success, positioning us for continued growth. Thank you.</p>
-        </section>
-      </div>
+      <!-- Closing / Resources -->
+      <section>
+        <h2>Thank You!</h2>
+        <p>Questions? Email me: <a href="mailto:24f2001419@ds.study.iitm.ac.in">24f2001419@ds.study.iitm.ac.in</a></p>
+        <p>
+          <a href="https://github.com/[YOUR_GITHUB_USER]/[YOUR_REPO]" target="_blank">View Presentation on GitHub Pages</a>
+        </p>
+        <aside class="notes">
+          Open for Q&A. Invite feedback and next steps.
+        </aside>
+      </section>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
-
-    <script>
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
-        transition: 'slide',
-        plugins: [RevealMarkdown, RevealHighlight, RevealMath, RevealNotes],
-      });
-    </script>
-  </body>
+  </div>
+  <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+  <script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="https://unpkg.com/reveal.js/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+      slideNumber: true,
+      keyboard: true,
+      pdfSeparateFragments: false,
+      mathjax3: {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      }
+    });
+    Reveal.on('slidechanged', function(event) {
+      // Custom event handler if needed
+    });
+  </script>
+</body>
 </html>
