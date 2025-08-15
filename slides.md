@@ -58,6 +58,13 @@ section pre {
   padding: 10px;
   margin: 10px 0;
 }
+
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
 </style>
 
 <!-- _class: title-slide -->
@@ -72,12 +79,17 @@ section pre {
 
 ---
 
-<!-- _backgroundImage: url('https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=1920&h=1080&fit=crop') -->
-<!-- _class: lead -->
+<!-- _backgroundImage: url('https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=1920&h=1080&fit=crop&overlay=dark') -->
+
+<div class="bg-overlay">
 
 # **Vision & Mission**
 
-Building scalable software solutions for the modern enterprise
+## Building scalable software solutions for the modern enterprise
+
+### Our commitment to innovation and excellence
+
+</div>
 
 ---
 
@@ -96,7 +108,9 @@ Building scalable software solutions for the modern enterprise
 
 ---
 
-<!-- _class: tech-slide -->
+<!-- _backgroundImage: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&h=1080&fit=crop') -->
+
+<div class="bg-overlay">
 
 ## 🏗️ System Architecture
 
@@ -110,15 +124,16 @@ class ProductPlatform:
         self.cache = RedisCache()
     
     def process_request(self, request):
-        # Route through API gateway
         return self.api_gateway.route(request)
 ```
 
 **Key Components:**
 - API Gateway with rate limiting
-- Microservices architecture
+- Microservices architecture  
 - Distributed database system
 - Redis caching layer
+
+</div>
 
 ---
 
@@ -175,7 +190,9 @@ Authorization: Bearer {jwt_token}
 
 ---
 
-<!-- _backgroundColor: #2c3e50 -->
+<!-- _backgroundImage: url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1920&h=1080&fit=crop') -->
+
+<div class="bg-overlay">
 
 ## 🧮 Algorithm Performance
 
@@ -199,11 +216,11 @@ Average case performance:
 
 Worst case: $O(n)$ with poor hash function
 
+</div>
+
 ---
 
 ## 🚀 Implementation Guidelines
-
-<!-- _class: lead -->
 
 ### Development Workflow
 
@@ -226,6 +243,10 @@ Worst case: $O(n)$ with poor hash function
    - CI/CD pipeline integration
 
 ---
+
+<!-- _backgroundImage: url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1920&h=1080&fit=crop') -->
+
+<div class="bg-overlay">
 
 ## 📚 Best Practices
 
@@ -257,10 +278,13 @@ class APIClient {
 - Implement rate limiting
 - Regular security audits
 
+</div>
+
 ---
 
 <!-- _backgroundImage: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&h=1080&fit=crop') -->
-<!-- _class: lead -->
+
+<div class="bg-overlay">
 
 # **Questions & Support**
 
@@ -272,6 +296,8 @@ class APIClient {
 ### 🤝 Thank You!
 
 *Building better software, together*
+
+</div>
 
 ---
 
