@@ -1,123 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>24f2001419@ds.study.iitm.ac.in</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Q3 Earnings Report</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme" />
 
-  <!-- Core CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <h3>Financial Performance Analysis</h3>
+          <p>Presented by: <a href="mailto:24f2001419@ds.study.iitm.ac.in">24f2001419@ds.study.iitm.ac.in</a></p>
+          <aside class="notes">
+            Welcome everyone to our Q3 earnings report. We'll be reviewing our key performance indicators and financial highlights.
+          </aside>
+        </section>
 
-  <!-- Highlight.js theme -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
-</head>
-<body>
+        <section data-markdown>
+          <textarea data-template>
+            ## Key Highlights
 
-<div class="reveal">
-  <div class="slides">
+            - Strong revenue growth of **15%** quarter-over-quarter.
+            - Successful launch of our new digital banking platform.
+            - Expansion into new international markets.
 
-    <section>
-      <h1>Created by: Naman Munjal</h1>
-      <h3>Email: 24f2001419@ds.study.iitm.ac.in</h3>
-      <p>24f2001419@ds.study.iitm.ac.in</p>
-    </section>
+            ---
 
-    <section data-markdown>
-      <textarea data-template>
-# **Aurora Financial Group**
-### FY25 Strategy Brief
-<small>Confidential — Internal Use</small>
+            ## Strategic Outlook
 
----
+            - Focus on customer acquisition through targeted marketing.
+            - Investment in AI-driven fraud detection.
+            - Optimization of operational costs.
+          </textarea>
+          <aside class="notes">
+            This slide, created with Markdown, provides a high-level overview of our achievements and future plans.
+          </aside>
+        </section>
 
-## Company Snapshot
-- Founded: **2012**
-- Segments: **Retail Banking**, **SME Lending**, **Wealth**
-- Customers: **3.2M+**
-- Assets Under Management: **₹42,000 Cr**
+        <section>
+          <h2>Revenue Breakdown</h2>
+          <ul>
+            <li class="fragment fade-up">Digital Services: +25%</li>
+            <li class="fragment fade-up">Traditional Banking: +5%</li>
+            <li class="fragment fade-up">Wealth Management: +10%</li>
+          </ul>
+          <aside class="notes">
+            We will now break down our revenue streams. Notice the significant growth in our digital services, a result of our strategic investments.
+          </aside>
+        </section>
 
----
-
-## Market Outlook
-- GDP growth: **6.8–7.2%**
-- UPI volumes: **+28% YoY**
-- Gradual rate cuts expected in H2 FY25
-
----
-
-## Risk & Compliance
-- Credit scoring with alternate data
-- LCR > **120%** liquidity buffer
-- ISO 27001 & PCI DSS certified
-```python
+        <section>
+          <h2>Market Data Analysis</h2>
+          <pre>
+            <code class="python" data-line-numbers="1,4|5-6|8">
+import pandas as pd
 import numpy as np
-import pandas as pd
-x=pd.read_excel("data.xlsx")
-x.head()
-```
-      </textarea>
-    </section>
 
-    <section>
-      <h2>Formula</h2>
-      CAGR:
-      \[
-        \text{CAGR} = \left(\frac{V_f}{V_i}\right)^{\frac{1}{n}} - 1
-      \]
-    </section>
+# Load market data
+market_data = pd.read_csv('market_data.csv')
 
-    <section>
-      <h2>Risk &amp; Compliance</h2>
-      <ul>
-        <li class="fragment">Credit scoring with alternate data</li>
-        <li class="fragment fade-up">LCR &gt; <strong>120%</strong> liquidity buffer</li>
-        <li class="fragment fade-up">ISO 27001 &amp; PCI DSS certified</li>
-      </ul>
-    </section>
-    <section>
-  <pre><code class="python" data-line-numbers="1-2|4,6-7|9">
-import pandas as pd
-import seaborn as sns
+# Calculate moving average
+market_data['SMA_50'] = market_data['Close'].rolling(window=50).mean()
 
-# Load data
-data = pd.read_csv('data.csv')
+print(market_data.tail())
+            </code>
+          </pre>
+          <aside class="notes">
+            Our data science team used this Python script to analyze market trends, specifically calculating a 50-day simple moving average.
+          </aside>
+        </section>
 
-# Create visualization
-sns.scatterplot(data=data, x='x', y='y')
-  </code></pre>
-  <p>24f2001419@ds.study.iitm.ac.in</p>
-</section>
+        <section>
+          <h2>Financial Valuation</h2>
+          <p>We can determine the present value of future cash flows using the following formula:</p>
+          <div style="text-align: center;">
+            $$ PV = \sum_{t=1}^{n} \frac{CF_t}{(1+r)^t} $$
+          </div>
+          <p>Where:</p>
+          <ul class="no-bullets">
+            <li>$PV$ = Present Value</li>
+            <li>$CF_t$ = Cash Flow at time $t$</li>
+            <li>$r$ = Discount Rate</li>
+          </ul>
+          <aside class="notes">
+            This discounted cash flow model is fundamental to our valuation process, helping us assess the long-term value of our assets.
+          </aside>
+        </section>
 
-  </div>
-</div>
+        <section>
+          <h2>Conclusion</h2>
+          <p>The quarter was a success, positioning us for continued growth. Thank you.</p>
+        </section>
+      </div>
+    </div>
 
-<!-- Reveal.js Core -->
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
-<!-- Plugins: UMD versions (safe for all browsers/servers) -->
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
-
-<!-- Init -->
-<script>
-  Reveal.initialize({
-    width: 1280,
-    height: 720,
-    controls: true,
-    progress: true,
-    hash: true,
-    transition: 'slide',
-    plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
-  });
-</script>
-
-<!-- MathJax for formulas -->
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-</body>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'slide',
+        plugins: [RevealMarkdown, RevealHighlight, RevealMath, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
