@@ -99,6 +99,20 @@ print(market_data.tail())
         </section>
 
         <section>
+          <pre><code class="python" data-line-numbers="1-2|4,6-7|9">
+        import pandas as pd
+        import seaborn as sns
+
+        # Load data
+        data = pd.read_csv('data.csv')
+
+        # Create visualization
+        sns.scatterplot(data=data, x='x', y='y')
+          </code></pre>
+        </section>
+
+
+        <section>
           <h2>Financial Valuation</h2>
           <p>We can determine the present value of future cash flows using the following formula:</p>
           <div style="text-align: center;">
