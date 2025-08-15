@@ -73,6 +73,19 @@ x.head()
         <li class="fragment fade-up">ISO 27001 &amp; PCI DSS certified</li>
       </ul>
     </section>
+    <section>
+  <pre><code class="python" data-line-numbers="1-2|4,6-7|9">
+import pandas as pd
+import seaborn as sns
+
+# Load data
+data = pd.read_csv('data.csv')
+
+# Create visualization
+sns.scatterplot(data=data, x='x', y='y')
+  </code></pre>
+  <p>24f2001419@ds.study.iitm.ac.in</p>
+</section>
 
   </div>
 </div>
