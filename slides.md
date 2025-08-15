@@ -284,6 +284,7 @@ class APIClient {
 
 <!-- _backgroundImage: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&h=1080&fit=crop') -->
 
+![bg](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&h=1080&fit=crop)
 <div class="bg-overlay">
 
 # **Questions & Support**
